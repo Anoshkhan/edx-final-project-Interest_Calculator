@@ -1,0 +1,58 @@
+<doctype HTML>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <br/><br/>
+        <label>Amount</label>
+         
+        <input type="number"  id="principal">  <br/><br/>
+        <label>Rate</label>
+        <input type="range"  id="rate" min="1" max="100" step="1" value="0" oninput="showVal(this.value)" onchange="showVal(this.value)">
+        <span id="showRate">0%</span>
+        <br/><br/>
+        <label>No. of Years </label>
+        <!-- the no of years values-->
+        <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+               
+                
+        </select>
+        <br/>
+        <br/>
+        
+        <button onclick="compute()">Compute</button>
+        <br/><br/>
+        <span id="showing_data"></span><br/>
+        <br/>
+        
+        <span id="result"></span>
+        <footer>
+            <br/><br/><br/>
+        &#169; This Calculator belongs to --Anosh Khan--
+        </footer>
+        </div>
+
+        <script src="script.js">
+            
+           
+            
+        </script>
+
+
+   
+    </body>
+</html>
